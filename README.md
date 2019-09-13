@@ -30,4 +30,4 @@ void user_init(void) {
 License
 =======
 
-MIT licensed. See the bundled [LICENSE](https://github.com/maximkulkin/esp-led-status/blob/master/LICENSE) file for more details.
+MIT licensed. See the bundled [LICENSE](https://github.com/stellarshenson/esp-serial-cmdline/LICENSE) file for more details.
