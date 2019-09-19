@@ -15,9 +15,7 @@ void on_command_callback(char* _cmd) {
     char *ssid = &setup_buffer[0];
     char *password = &setup_buffer[64];
 
-    if(!strcmp(_cmd, "reset")) {
-	reset_settings();
-    } else if( strncmp(_cmd, "setup_wifi", strlen("setup_wifi")) == 0 ) {
+    if( strncmp(_cmd, "setup_wifi", strlen("setup_wifi")) == 0 ) {
 	INFO("espresso_switch: setting up wifi with the: %s", _cmd );
 	sscanf(_cmd, "%*s %s %s", ssid, password);
 	wifi_config_set(ssid, password);
